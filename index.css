@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", cursive;
+    scroll-behavior: smooth;
+}
+:root{
+    --light-gray:gray;
+    --transparent-blue:blue;
+    --light-green:rgb(81, 145, 81);
+    --white-color:white;
+}
+.hero{
+    background: linear-gradient(rgb(83, 8, 83), rgba(59, 21, 1, 0.3)),
+    url(nature\ 2.jpeg) no-repeat center center/cover;
+}
+.box1{
+    animation-name: box1;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: .5s ease;
+}
+@keyframes box1{
+    0%{
+        transform: scale(0);
+    }
+    50%, 100%{
+        transform: scale(1.0, 1.1);
+    }
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+}
+.nav_links ul{
+    display: flex;
+    list-style-type: none;
+    color: var(--white-color);
+}
+.nav_links li{
+    padding: 10px;
+    font-size: 18px;
+}
+.nav_links ul li:hover{
+    background-color: var(--light-green);
+    transition: all .3s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.logo h2{
+    color: var(--light-green);
+    font-size: 1.9rem;
+}
+
+/* for  */
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 0;
+}
+.description h2{
+    font-size: 3rem;
+    color: var(--white-color);
+}
+.buttons{
+    margin: 20px;
+}
+.buttons button{
+    padding: 10px 55px;
+    background: transparent;
+    border: 3px solid var(--light-green);
+    color: var(--white-color);
+    margin: 0 15px;
+    border-radius: 20px;
+}
+.buttons button:hover{
+    background: var(--light-green);
+    transition: all .3s;
+    cursor: pointer;
+}
+.contents{
+    background-color: rgb(10, 10, 41);
+}
+.contents h2,p{
+    text-align: center;
+    color: aliceblue;
+}
+.image{
+    display: flex;
+}
+.aboutus{
+    border: 1px solid black;
+    padding: 100px 50px;
+}
+.aboutus .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutus img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.aboutus h2{
+    font-size: 35px;
+    text-align: center;
+    color: aqua;
+}
+.aboutus h3{
+    color: #009999;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+
+p{
+    color: gray;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+
+.last h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}
+footer{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+footer1{
+    border: 1px solid #009999;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.aboutus{
+    background-color: black;
+}
+.menu{
+    display: none;
+}
+/* for media querry on mobile */
+@media screen and (min-width: 0) and (max-width: 750px) {
+    .nav_container{
+        background: orange;
+    }
+    .nav_links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+}
+.paragraph{
+    color: black;
+}
+.last{
+    display: flex;
+    background-color:rgb(17, 16, 16);
+    
+}
+
+.last div{
+    margin: 10px;
+}
+.services{
+    padding: 10px;
+    font-size: 35px;
+}
+.fa-code{
+    color: black;
+}
+.fa-pen{
+    color: black;
+}
+.fa-app-store{
+    color: black;
+}
+
+.fa-file-excel{
+    color: black;
+}
+h4{
+    color: black;
+    
+}
+.box0{
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 40px;
+    border-radius: 10px;
+}
+.box2{
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 40px;
+    border-radius: 10px;
+}
+.box3{
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 40px;
+    border-radius: 10px;
+}
+.box4{
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 40px;
+    border-radius: 10px;
+}
+.call{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.dada{
+    padding: 15px;
+}
+.envelope{
+    padding: 10px;
+}
+.coco{
+    padding: 10px;
+}
+form div{
+    margin-bottom: 10px;
+}
+.second_contact input{
+    padding: 10px 50px;
+    background-color: rgb(199, 189, 189);
+    border-radius: 10px;
+    width: 100%;
+}
+form textarea{
+    width: 100%;
+    background-color: rgb(194, 183, 183);
+}
+.button1{
+    padding: 15px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+.send{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.last div:hover{
+    cursor: pointer;
+    background: rgb(172, 44, 44);
+    transition: .4s ease;
+    transform: scale(1.1);
+}
+@media screen and (min-width: 0) and (max-width: 750px){
+    .last{
+        display: block;
+    }
+}
+h5{
+    justify-content: center;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    font-size: 40px;
+}
+.parent_image{
+    display: flex;
+    justify-content: space-between;
+    background-color:gray;
+    padding: 10px;
+}
+.parent_image div:hover{
+    cursor: pointer;
+    transition: .4 ease;
+   transform: scale(1.2);
+}
+#image20{
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#image10{
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#image30{
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.call{
+    background-color: gray;
+}
+h6{
+    justify-content: center;
+    font-weight: bold;
+    display: flex;
+    padding: 8px;
+    font-size: 40px;
+}
